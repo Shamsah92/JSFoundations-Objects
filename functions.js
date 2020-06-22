@@ -11,7 +11,8 @@
  * - returns the name of the channel
  ****************************************************************/
 function getChannelName(channel) {
-  // Your code here
+  console.log(channel);
+  return channel.name;
 }
 
 /**************************************************************
@@ -20,7 +21,7 @@ function getChannelName(channel) {
  * - returns the number of videos that channel has
  ****************************************************************/
 function numberOfVideos(channel) {
-  // Your code here
+  return channel.length["vidoes"];
 }
 
 /**************************************************************
@@ -33,7 +34,7 @@ function numberOfVideos(channel) {
  * BONUS: use iteration method `.some()`
  ****************************************************************/
 function channelHasVideo(videoTitle, channel) {
-  // Your code here
+  return channel.videos.some((video) => video.title === videoTitle);
 }
 
 /**************************************************************
